@@ -1,3 +1,19 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: 'Satoshi', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+:root{
+  --light-green: #42C83C;
+  --medium-gray: #797979;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
