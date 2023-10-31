@@ -14,7 +14,7 @@ function Home({ token }) {
   async function getHomeHeader() {
     console.log(token);
     const response = await fetch(
-      "https://api.spotify.com/v1/artists?ids=1Xyo4u8uXC1ZmMpatF05PJ,0Y5tJX1MQlPlqiwlOH1tJY,4q3ewBCX7sLwd24euuV69X,5XJDexmWFLWOkjOEjOVX3e",
+      "https://api.spotify.com/v1/artists?ids=1Xyo4u8uXC1ZmMpatF05PJ,0Y5tJX1MQlPlqiwlOH1tJY,4q3ewBCX7sLwd24euuV69X,5XJDexmWFLWOkjOEjOVX3e,19HM5j0ULGSmEoRcrSe5x3,716NhGYqD1jl2wI1Qkgq36",
       {
         type: "GET",
         headers: {
@@ -66,7 +66,7 @@ function Home({ token }) {
         <ul className="home__menu">
           <li className="menu__item">Artists</li>
         </ul>
-        <div className="home__artists">
+        <div className="home__artists" id='home__artists'>
           {Data?.artists?.map((artist) => (
             <div className="artist__card" key={artist?.id}>
               <picture className="artist__image">
