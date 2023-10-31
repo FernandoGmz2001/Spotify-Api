@@ -14,7 +14,7 @@ function Home({ token }) {
   async function getHomeHeader() {
     console.log(token);
     const response = await fetch(
-      "https://api.spotify.com/v1/artists?ids=1Xyo4u8uXC1ZmMpatF05PJ,0Y5tJX1MQlPlqiwlOH1tJY,4q3ewBCX7sLwd24euuV69X,5XJDexmWFLWOkjOEjOVX3e,19HM5j0ULGSmEoRcrSe5x3,716NhGYqD1jl2wI1Qkgq36",
+      "https://api.spotify.com/v1/artists?ids=1Xyo4u8uXC1ZmMpatF05PJ,0Y5tJX1MQlPlqiwlOH1tJY,4q3ewBCX7sLwd24euuV69X,5XJDexmWFLWOkjOEjOVX3e,19HM5j0ULGSmEoRcrSe5x3,716NhGYqD1jl2wI1Qkgq36,0Q8NcsJwoCbZOHHW63su5S,2LRoIwlKmHjgvigdNGBHNo",
       {
         type: "GET",
         headers: {
